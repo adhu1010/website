@@ -1,0 +1,6 @@
+{
+  "name": "ralph-code",
+  "version": "1.0.0",
+  "description": "Architectural rigor and deterministic planning plugin for KR Mill development",
+  "rules": ["adhere-strictly-to-spec", "zero-vibecoding-patterns"]
+}

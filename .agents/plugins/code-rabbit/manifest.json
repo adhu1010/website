@@ -1,0 +1,6 @@
+{
+  "name": "code-rabbit",
+  "version": "1.0.0",
+  "description": "Continuous code quality and 30-anti-pattern compliance auditing plugin",
+  "rules": ["no-lucide-icons", "no-harsh-gradients", "no-em-dashes", "no-emojis", "border-radius-max-3px", "earthy-heritage-palette"]
+}

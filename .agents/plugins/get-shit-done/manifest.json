@@ -1,0 +1,6 @@
+{
+  "name": "get-shit-done",
+  "version": "1.0.0",
+  "description": "Zero-friction execution engine for deploying KR Mill production components without compromise",
+  "rules": ["complete-implementation", "zero-placeholders", "full-accessibility-seo"]
+}

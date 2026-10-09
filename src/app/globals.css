@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-cream: #FDFBF7;
+    --bg-unbleached: #F8F5EE;
+    --bg-paper: #F1EDE4;
+    --border-subtle: #DCD4C4;
+    --border-strong: #C5B9A4;
+    --text-ink: #241E17;
+    --text-muted: #655A4E;
+    --terracotta: #8F3B1B;
+    --turmeric: #B47B1C;
+    --burlap: #6B5138;
+    --leaf: #2C4C38;
+  }
+
+  html {
+    background-color: #FDFBF7;
+    color: #241E17;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Noto Sans Malayalam', sans-serif;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #FDFBF7;
+    color: #241E17;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* Strict Anti-Vibecoding Rules: Cap all radius to 3px max, forbid drop shadows */
+  *, *::before, *::after {
+    box-shadow: none !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, Merriweather, 'Playfair Display', 'Noto Serif Malayalam', serif;
+    color: #241E17;
+    font-feature-settings: "liga", "kern";
+    letter-spacing: -0.01em;
+  }
+
+  /* Fluid typography clamp */
+  .fluid-hero-title {
+    font-size: clamp(2rem, 4.5vw, 3.4rem);
+    line-height: 1.15;
+  }
+
+  .fluid-section-title {
+    font-size: clamp(1.6rem, 3.2vw, 2.3rem);
+    line-height: 1.25;
+  }
+
+  .fluid-sub-title {
+    font-size: clamp(1.15rem, 2vw, 1.45rem);
+    line-height: 1.35;
+  }
+}
+
+/* Subtle, clean focus outlines for accessibility without harsh glow */
+:focus-visible {
+  outline: 2px solid #8F3B1B;
+  outline-offset: 2px;
+}
+
+/* Authentic editorial table styles */
+.mill-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #DCD4C4;
+}
+
+.mill-table th {
+  background-color: #F1EDE4;
+  color: #241E17;
+  font-family: Georgia, Merriweather, serif;
+  font-weight: 600;
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 1px solid #DCD4C4;
+  border-right: 1px solid #DCD4C4;
+}
+
+.mill-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #DCD4C4;
+  border-right: 1px solid #DCD4C4;
+  background-color: #FDFBF7;
+}
+
+.mill-table tr:nth-child(even) td {
+  background-color: #F8F5EE;
+}
+
+/* Natural scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1EDE4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C5B9A4;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6B5138;
+}
